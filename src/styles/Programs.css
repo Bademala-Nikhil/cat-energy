@@ -98,7 +98,8 @@
 @media (max-width: 768px) {
 
   .program-card {
-    padding: 20px;
+    margin-top: 0;
+    padding: 10px;
   }
 
   .card-header {

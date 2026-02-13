@@ -12,9 +12,9 @@
 .logo {
   position: absolute;
   width: 202px;
-  height: 89px;
+  height: 59px;
   top: 10px;
-  left: 90px;
+  left: 40px;
   cursor: pointer;
   transition: transform 0.3s ease, opacity 0.3s;
 }
@@ -109,7 +109,7 @@
 
   .menu button {
     color: black;
-    padding: 10px;
+    padding: 5px;
   }
 
   .hamburger {

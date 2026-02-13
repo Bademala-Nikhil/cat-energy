@@ -1,21 +1,96 @@
+/* ================= GLOBAL RESET ================= */
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
+/* ================= ROOT ================= */
 html, body, #root {
   width: 100%;
   height: 100%;
 }
 
+/* ================= BODY ================= */
 body {
   margin: 0;
   padding: 0;
-  overflow-x: hidden;
+  overflow-x: hidden; /* 🔥 STOP HORIZONTAL SCROLL */
+  background: #ffffff;
 }
 
+/* ================= APP CONTAINER ================= */
 .app {
   width: 100%;
   margin: 0;
+  overflow-x: hidden; /* 🔥 SAFE */
+  position: relative;
+}
+
+/* ================= SECTION SAFE ================= */
+section {
+  width: 100%;
+  overflow-x: hidden; /* 🔥 prevents overflow */
+}
+
+/* ================= MEDIA FIX ================= */
+img,
+video,
+canvas {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+/* ================= FORM ELEMENTS ================= */
+input,
+textarea,
+button,
+select {
+  max-width: 100%;
+  font-family: inherit;
+}
+
+/* ================= TEXT ================= */
+h1, h2, h3, h4, h5, h6 {
+  font-weight: normal;
+}
+
+/* ================= LINKS ================= */
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+/* ================= BUTTON ================= */
+button {
+  border: none;
+  outline: none;
+  cursor: pointer;
+}
+
+/* ================= DEBUG (use if needed) ================= */
+/*
+* {
+  outline: 1px solid red;
+}
+*/
+
+/* ================= EXTRA SAFETY ================= */
+/* Prevent any element from exceeding viewport */
+body * {
+  max-width: 100vw;
+}
+
+/* ================= MOBILE FIX ================= */
+@media (max-width: 768px) {
+
+  html, body {
+    overflow-x: hidden;
+  }
+
+  .app {
+    overflow-x: hidden;
+  }
+
 }

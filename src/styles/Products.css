@@ -1,0 +1,117 @@
+.products {
+  width: 100%;
+  max-width: 1440px;
+  margin: 150px auto;
+}
+
+/* HEADING */
+.products h2 {
+  font-size: 48px;
+  margin-left: 110px;
+  margin-bottom: 60px;
+}
+
+/* GRID */
+.products-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 40px;
+  padding: 0 110px;
+}
+
+/* CARD */
+.card {
+  width: 245px;
+  height: 511px;
+  background: #f2f2f2;
+  text-align: center;
+  padding: 20px;
+}
+
+/* IMAGE */
+.card img {
+  width: 172px;
+  height: 196px;
+  object-fit: contain;
+}
+
+/* TITLE */
+.card h3 {
+  margin-top: 20px;
+  font-size: 18px;
+}
+
+/* INFO */
+.info {
+  margin-top: 20px;
+  font-size: 14px;
+}
+
+.info p {
+  display: flex;
+  justify-content: space-between;
+  margin: 5px 0;
+}
+
+/* BUTTON */
+.card button {
+  margin-top: 20px;
+  width: 168px;
+  height: 40px;
+  background: #68b738;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+}
+
+/* SHOW MORE CARD */
+.more {
+  border: 2px dashed #ccc;
+  background: transparent;
+}
+
+.plus {
+  font-size: 40px;
+  margin-top: 40px;
+}
+
+.more h3 {
+  font-size: 16px;
+  margin: 20px 0;
+}
+
+.more p {
+  font-size: 14px;
+  color: #666;
+}
+
+.gray {
+  background: #eaeaea;
+  color: #000;
+}
+
+@media (max-width: 1024px) {
+
+  .products-grid {
+    grid-template-columns: repeat(2, 1fr);
+    padding: 0 20px;
+  }
+
+  .card {
+    width: 100%;
+  }
+
+}
+
+@media (max-width: 768px) {
+
+  .products-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .products h2 {
+    margin-left: 20px;
+    font-size: 32px;
+  }
+
+}

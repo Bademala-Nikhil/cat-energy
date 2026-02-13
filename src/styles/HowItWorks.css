@@ -1,0 +1,104 @@
+.how {
+  position: relative;
+  width: 100%;
+  max-width: 1330px;
+  margin: 100px auto;
+}
+
+/* ================= HEADING ================= */
+
+.how h2 {
+  width: 375px;
+  height: 60px;
+  margin-left: 110px;
+
+  font-size: 38px;
+  font-weight: 400;
+}
+
+/* ================= BLOCKS ================= */
+
+.blocks {
+  display: flex;
+  gap: 60px;
+  margin-top: 60px;
+  padding-left: 110px;
+}
+
+/* SINGLE BLOCK */
+.block {
+  position: relative;
+  width: 230px;
+  height: 280px;
+}
+
+/* ICON */
+.icon {
+  width: 80px;
+  height: 80px;
+  background: #68b738;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.icon img {
+  width: 40px;
+}
+
+/* TEXT */
+.block p {
+  width: 201px;
+  margin-top: 30px;
+  font-size: 16px;
+  line-height: 24px;
+}
+
+/* BIG NUMBER BACKGROUND */
+.num {
+  position: absolute;
+  top: -40px;
+  right: 0;
+
+  font-size: 200px;
+  color: #afaaaa;
+  z-index: -1;
+}
+
+@media (max-width: 1024px) {
+
+  .blocks {
+    flex-wrap: wrap;
+    justify-content: center;
+    padding-left: 0;
+  }
+
+  .block {
+    width: 45%;
+  }
+
+  .how h2 {
+    margin-left: 20px;
+  }
+}
+
+@media (max-width: 768px) {
+
+  .blocks {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .block {
+    width: 90%;
+  }
+
+  .how h2 {
+    font-size: 32px;
+    margin-left: 20px;
+  }
+
+  .num {
+    font-size: 120px;
+  }
+}

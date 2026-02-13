@@ -1,0 +1,201 @@
+.example {
+  width: 100%;
+  max-width: 1440px;
+  margin: 100px auto 0;
+  position: relative;
+}
+
+/* TOP BLACK STRIP */
+.top-strip {
+  width: 100%;
+  height: 150px;
+  background: #000;
+}
+
+/* GREY AREA */
+.content {
+  width: 100%;
+  height: 462px;
+  background: #f2f2f2;
+  display: flex;
+  justify-content: space-between;
+  padding: 60px 110px;
+}
+
+/* ================= LEFT ================= */
+
+.left {
+  width: 436px;
+}
+
+.left h2 {
+  font-size: 48px;
+  margin-bottom: 40px;
+}
+
+.left p {
+  font-size: 16px;
+  line-height: 24px;
+  color: #444;
+}
+
+/* STATS */
+.stats {
+  display: flex;
+  gap: 40px;
+  margin-top: 40px;
+}
+
+.box {
+  width: 162px;
+  height: 77px;
+  border: 1px solid #ccc;
+  text-align: center;
+  padding-top: 10px;
+}
+
+.box h3 {
+  font-size: 28px;
+}
+
+.box span {
+  font-size: 12px;
+  color: #666;
+}
+
+/* COST */
+.cost {
+  margin-top: 30px;
+  display: flex;
+  gap: 20px;
+  font-size: 18px;
+}
+
+/* ================= RIGHT ================= */
+
+.right {
+  position: relative;
+  width: 600px;
+}
+
+/* IMAGE WRAPPER */
+.image-wrapper {
+  position: relative;
+  width: 365px;
+  height: 536px;
+  margin: -200px auto 0;
+  padding-right: 300px;
+}
+
+/* IMAGES */
+.before,
+.after {
+  position: absolute;
+  width: 365px;
+  height: 536px;
+  object-fit: cover;
+}
+
+/* AFTER HALF */
+.after {
+  clip-path: inset(0 0 0 50%);
+}
+
+/* DIVIDER */
+.divider {
+  position: absolute;
+  left: 50%;
+  top: 0;
+  width: 2px;
+  height: 100%;
+  background: #ccc;
+}
+
+/* SLIDER */
+.slider {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+  margin-top: 20px;
+}
+
+.line {
+  width: 300px;
+  height: 6px;
+  background: #ddd;
+  border-radius: 10px;
+  position: relative;
+}
+
+.circle {
+  width: 24px;
+  height: 24px;
+  background: #68b738;
+  border-radius: 50%;
+  position: absolute;
+  top: -9px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+@media (max-width: 1024px) {
+
+  .content {
+    flex-direction: column;
+    align-items: center;
+    height: auto;
+  }
+
+  .left {
+    width: 90%;
+    text-align: center;
+  }
+
+  .stats {
+    justify-content: center;
+  }
+
+  .cost {
+    justify-content: center;
+  }
+
+  .right {
+    margin-top: 40px;
+  }
+
+  .image-wrapper {
+    margin-top: 0;
+  }
+}
+
+@media (max-width: 768px) {
+
+  .left h2 {
+    font-size: 32px;
+  }
+
+  .stats {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .box {
+    width: 100%;
+  }
+
+  .line {
+    width: 200px;
+  }
+
+  .image-wrapper {
+    width: 250px;
+    height: auto;
+  }
+
+  .before,
+  .after {
+    width: 250px;
+    height: auto;
+  }
+}
